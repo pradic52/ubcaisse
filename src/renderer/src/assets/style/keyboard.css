@@ -1,0 +1,51 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Top row */
+.keyboard .top-row {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+
+/* Corps du clavier */
+.keyboard-body {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Colonne de fonctions latérales */
+.side-col,
+.action-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Pavé numérique centré */
+.num-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+/* Pour que chaque bouton remplisse bien sa case */
+.keyboard .btn {
+  width: 100%;
+  /* aspect-ratio = largeur / hauteur ; ici carré : */
+  aspect-ratio: 1;
+  font-size: 1rem;
+  padding: 0; /* on gère l’espace via aspect-ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* variantes : touches XXL (ENTRÉE, TOTAL) */
+.action-col .btn {
+  aspect-ratio: 2.5; /* plus rectangle vertical */
+}
