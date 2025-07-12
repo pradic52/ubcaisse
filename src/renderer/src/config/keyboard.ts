@@ -1,21 +1,33 @@
 // src/config/keyboard.ts
 import { Weight } from 'lucide-react'
 export const topFunctions = [
-  { label: 'DÉCONNEXION', variant: 'success' },
+  { label: 'DÉCON- NEXION', variant: 'success' },
   { label: 'VÉRIF. PRIX', variant: 'success' },
   { label: 'SOLDE CARTE-CADEAU', variant: 'success' },
-  { label: 'TÉLÉPHONE RÉAPPRO', variant: 'success' }
+  { label: '', variant: 'success' },
+  { label: '', variant: 'success' },
+  { label: '', variant: 'success' },
+  { label: 'Consigne', variant: 'success' },
+  { label: '@', variant: 'success' },
+  { label: 'TÉLÉPHONE RÉAPPRO', variant: 'success' },
+  { label: '', variant: 'success' },
+  { label: '', variant: 'success' },
+  { label: '', variant: 'success' }
 ]
 
 export const sideFunctions = [
-  { label: 'CONSIGNE' },
   { label: '↑' },
   { label: '↓' },
-  { label: 'CORR. ERREUR', variant: 'light' },
-  { label: 'CL', variant: 'light' }
+  { label: 'CORR. ERREUR', variant: 'primary' },
+  { label: 'CL' }
 ]
 
-export const numPad = [['7', '8', '9', '@'], ['4', '5', '6', '.'], ['1', '2', '3'], ['0', '00']]
+export const numPad = [
+  ['7', '8', '9'],
+  ['4', '5', '6'],
+  ['1', '2', '3'],
+  ['0', '00']
+]
 
 export const actionFunctions = [
   { label: 'ENTRÉE', variant: 'info' },

@@ -10,7 +10,11 @@ interface KeyProps {
 
 function Key({ label, onClick, className, icon }: KeyProps): JSX.Element {
   return (
-    <Button className={`text-break bg-info ${className}`} onClick={onClick}>
+    <Button
+      className={`text-wrap bg-info ${className}`}
+      style={{ width: '6rem', height: '5rem' }}
+      onClick={onClick}
+    >
       {icon}
       {label}
     </Button>
