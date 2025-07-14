@@ -6,13 +6,23 @@ interface KeyProps {
   onClick?: () => void
   className?: string
   icon?: React.ReactNode
+  dimensions?: {
+    width?: string
+    height?: string
+  }
 }
 
-function Key({ label, onClick, className, icon }: KeyProps): JSX.Element {
+function Key({
+  label,
+  onClick,
+  className,
+  icon,
+  dimensions = { width: '100px', height: '54px' }
+}: KeyProps): JSX.Element {
   return (
     <Button
-      className={`text-wrap bg-info ${className}`}
-      style={{ width: '6rem', height: '5rem' }}
+      className={`text-wrap bg-info ${className} `}
+      style={{ ...dimensions, boxSizing: 'border-box', padding: 0, margin: 0, fontSize: '0.9rem' }}
       onClick={onClick}
     >
       {icon}

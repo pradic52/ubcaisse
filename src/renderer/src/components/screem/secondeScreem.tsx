@@ -7,8 +7,8 @@ function Secondescreem(): JSX.Element {
   const [date, time] = useClock()
   return (
     <>
-      <Container className={mainClass.headerItems}>
-        <div className="text-uppercase" style={{ height: 80 }}>
+      <Container className={mainClass.headerItems} style={{ margin: 10 }}>
+        <div className="text-uppercase" style={{ height: 50 }}>
           {date} {time} T01 <br />
           TERMINAL FERMÉ
         </div>

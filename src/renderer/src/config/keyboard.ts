@@ -26,12 +26,13 @@ export const numPad = [
   ['7', '8', '9'],
   ['4', '5', '6'],
   ['1', '2', '3'],
-  ['0', '00']
+  ['00', '0', '000']
 ]
 
 export const actionFunctions = [
   { label: 'ENTRÉE', variant: 'info' },
-  { label: 'TOTAL', variant: 'info' },
   { label: 'PETIT ECO', variant: 'warning', icon: Weight },
+  { label: 'TOTAL', variant: 'info' },
+
   { label: 'GRAND ECO', variant: 'warning', icon: Weight }
 ]
